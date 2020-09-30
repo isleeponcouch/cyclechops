@@ -79,10 +79,6 @@ extension BikeManager : WFHardwareConnectorDelegate {
             formattedDistance = powerData.formattedDistance(true)
             formattedSpeed = powerData.formattedSpeed(true)
             isCoasting = powerData.isCoasting()
-            print("instant power: ", powerData.instantPower)
-            print("instant cadence: ", powerData.instantCadence)
-            print("instant wheel RPM: ", powerData.instantWheelRPM)
-            print("wheel revolutions: ", powerData.wheelRevolutions)
         }
     }
 
