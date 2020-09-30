@@ -16,8 +16,9 @@ class BikeManager : UIResponder, ObservableObject, WFBikeTrainerDelegate {
     var bikeConnection: WFWahooBIKEConnection?
     
     @Published var wheelRevolutions : Double = 0.0
-    @Published var formattedCadence : String = "--"
     @Published var isCoasting: Bool = false
+    
+    @Published var formattedCadence : String = "--"
     @Published var formattedDistance : String = "--"
     @Published var formattedSpeed: String = "--"
     
