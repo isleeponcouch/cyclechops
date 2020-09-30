@@ -27,9 +27,11 @@ struct SensorDatumView : View {
 
 struct ContentView: View {
     @ObservedObject var bikeManager: BikeManager = BikeManager()
+    
     init() {
         bikeManager.discoverAndConnect()
     }
+    
     var body: some View {
         VStack() {
             Spacer()
